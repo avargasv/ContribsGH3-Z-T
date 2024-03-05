@@ -1,0 +1,84 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "paths": {
+    "/org/{organization}/contributors": {
+      "description": "REST-API endpoint\n\n",
+      "get": {
+        "description": "REST-API endpoint\n\n",
+        "parameters": [
+          {
+            "name": "group-level",
+            "in": "query",
+            "description": "Grouping level parameter\n\n",
+            "required": false,
+            "deprecated": false,
+            "schema": {
+              "type": "string"
+            },
+            "explode": false,
+            "allowReserved": false,
+            "style": "form"
+          },
+          {
+            "name": "min-contribs",
+            "in": "query",
+            "description": "Minimum contributions parameter\n\n",
+            "required": false,
+            "deprecated": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "explode": false,
+            "allowReserved": false,
+            "style": "form"
+          },
+          {
+            "name": "organization",
+            "in": "path",
+            "required": true,
+            "deprecated": false,
+            "schema": {
+              "type": "string"
+            },
+            "explode": false,
+            "style": "simple"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "null",
+                "description": ""
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Contributor"
+                  },
+                  "description": "List of contributions\n\n"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "components": {}
+}

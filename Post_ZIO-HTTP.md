@@ -41,8 +41,8 @@ Scala**.
 
 ZIO HTTP inherits from ZIO the power and simplicity of the functional programming paradigm and from Netty the high 
 throughput of an asynchronous, event-driven network application framework. It is a library in continuous evolution 
-that, among its impressive recent improvements, has been provided with an Endpoints API for the high-level definition
-of endpoints that further simplifies the development of REST servers.
+that, among its impressive recent improvements, has been provided with the Endpoints API, used for the high-level
+definition of endpoints, that further simplifies the development of REST servers.
 
 This article discusses the ZIO HTTP implementation of the GitHub-based REST API just defined, explaining the basics 
 of ZIO HTTP and the use of its Endpoints API for the high-level definition of the corresponding endpoint.

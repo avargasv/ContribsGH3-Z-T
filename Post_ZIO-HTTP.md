@@ -1,4 +1,4 @@
-# Implementing a REST service with the high-level EndPoints API of ZIO HTTP
+# Implementing a REST service using the ZIO-HTTP high-level EndPoints API. 
 
 ## 1. Introduction. Specification of our REST-API and some characteristics of its ZIO HTTP implementation. 
 
@@ -115,7 +115,7 @@ ZIO HTTP is a library for building type-safe, purely functional HTTP servers and
 effects. As such, it inherits all the simplicity and power of ZIO for the pure-functional development of effectual
 programs in Scala.
 
-The current version of ZIO HTTP (1.0.0-RC4 at the time of writing this article) includes a DSL for the high-level
+The current version of ZIO HTTP (3.0.0-RC4 at the time of writing this article) includes a DSL for the high-level
 definition of REST endpoints that allows developers to overlook the low level details of defining routes and handlers,
 freeing them from writing the repetitive and error-prone code required to decode the query parameters, headings and 
 bodies of the HTTP requests and encode the corresponding HTTP responses.

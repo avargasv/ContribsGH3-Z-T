@@ -14,11 +14,11 @@ the contributions, and another to establish a minimum number of contributions fo
 in the response. The parameter names are “group-level” and “min-contribs”, respectively; the first accepts the values
 “repo” or “organization” (default), the second any integer value (default 0).*
 
-*For an API call that requests grouping at the organization level, the “repo” attribute of the response JSON records 
-must have the value “All {org_name} repos” (a pseudo-repository used to represent the entire organization). In a 
-similar way, the pseudo-contributor “Other contributors” must be used to accumulate the contributions under the 
-value of the “min-contribs” parameter (within each repository or within the entire organization, depending on the 
-value of the “group-level” parameter).*
+*When an API call requests grouping at the organization level, the “repo” attribute of the response JSON records must
+have the value “All {org_name} repos” (a pseudo-repository used to represent the entire organization). In a similar 
+way, the pseudo-contributor “Other contributors” must be used to accumulate the contributions under the value of the 
+“min-contribs” parameter (within each repository or within the entire organization, depending on the value of the 
+“group-level” parameter).*
 
 The implementation of this REST service uses ZIO HTTP, a Scala library used for building HTTP servers and clients 
 in a purely functional way, and REDIS, an in-memory data structure store used to implement a cache to speed up 
@@ -698,13 +698,18 @@ also of its Open API documentation.
 - A code base in continuous evolution where great improvements are frequently included.
 
 To close, we provide some references that can be useful to complement the information provided in this article about 
-ZIO and ZIO HTTP:
+ZIO and ZIO HTTP. In particular, since for space reasons we only covered GET endpoints, we recommend the first 
+reference, where a complete CRUD API (covering POST, PUT and DELETE requests) is developed using ZIO HTTP Endpoints,
+as well as similar APIs available in Tapir and Endpoints4s. As a bonus, a comparison matrix among those three 
+alternatives is presented that covers: compatibility with diverse HTTP server and client backends, JSON libraries 
+support, and performance.
 
 - Jorge Vasquez' presentation at Functional Scala 2023 about the Endpoints API of ZIO HTTP can be found 
 [here](https://jorgevasquez.blog/elevate-and-conquer-unleashing-the-power-of-high-level-endpoints-in-scala).
 - The first part of a [ZIO HTTP tutorial](https://scalac.io/blog/getting-started-with-zio-http/) by Jakub Czuchnowski,
-presents good examples of custom error handling, using the traditional way of defining endpoints.
+presents good examples of custom error handling.
 - The [official documentation](https://zio.dev/zio-http/) of ZIO HTTP.
-- The ZIO "bible" [Zionomicon](https://www.zionomicon.com/), co-written by John A. De Goes, the author of ZIO.
+- The ZIO standard introduction and quick reference [Zionomicon](https://www.zionomicon.com/), co-written by John A. 
+De Goes, the author of ZIO.
 
 The Scala source code of this article can be found [here](https://github.com/avargasv/ContribsGH3-Z-T).

@@ -698,18 +698,18 @@ also of its Open API documentation.
 - A code base in continuous evolution where great improvements are frequently included.
 
 To close, we provide some references that can be useful to complement the information provided in this article about 
-ZIO and ZIO HTTP. In particular, since for space reasons we only covered GET endpoints, we recommend the first 
+ZIO and ZIO HTTP. In particular, since for space reasons we only discussed GET endpoints, we recommend the first 
 reference, where a complete CRUD API (covering POST, PUT and DELETE requests) is developed using ZIO HTTP Endpoints,
 as well as similar APIs available in Tapir and Endpoints4s. As a bonus, a comparison matrix among those three 
-alternatives is presented that covers: compatibility with diverse HTTP server and client backends, JSON libraries 
+alternatives is presented that covers: compatibility with diverse HTTP server and client back-ends, JSON libraries 
 support, and performance.
 
 - Jorge Vasquez' presentation at Functional Scala 2023 about the Endpoints API of ZIO HTTP can be found 
 [here](https://jorgevasquez.blog/elevate-and-conquer-unleashing-the-power-of-high-level-endpoints-in-scala).
 - The first part of a [ZIO HTTP tutorial](https://scalac.io/blog/getting-started-with-zio-http/) by Jakub Czuchnowski,
-presents good examples of custom error handling.
+presents clarifying examples of custom error handling.
 - The [official documentation](https://zio.dev/zio-http/) of ZIO HTTP.
-- The ZIO standard introduction and quick reference [Zionomicon](https://www.zionomicon.com/), co-written by John A. 
-De Goes, the author of ZIO.
+- The ultimate guide to ZIO, [Zionomicon](https://www.zionomicon.com/), co-written by John A. De Goes, the author of 
+ZIO.
 
 The Scala source code of this article can be found [here](https://github.com/avargasv/ContribsGH3-Z-T).

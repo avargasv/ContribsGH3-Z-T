@@ -1,6 +1,6 @@
 package code.restService
 
-import zio.{Scope, ZIO, ZLayer}
+import zio.{Console, Scope, ZIO, ZLayer}
 import zio.http._
 import code.lib.AppAux._
 import code.model.DomainErrorTypes._
@@ -33,7 +33,6 @@ final case class RestClientLive() extends RestClient {
       val contributions_RE = """"contributions":([0-9]+)""".r
       val contributions_I = for (contributions_RE(contributions) <- contributions_RE.findAllIn(responsePage)) yield contributions
       val contributors_L = login_I.zip(contributions_I).map(p => Contributor(repo.name, p._1, p._2.toInt)).toList
-println(s"ContribsGH3-Z - repo '${repo.name}', retrieved from GitHub")
       contributors_L
     }
     resp

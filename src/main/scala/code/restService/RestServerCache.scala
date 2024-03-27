@@ -39,7 +39,6 @@ case class RestServerCacheLive(redisServerClient: RedisServerClient) extends Res
     val repoK = buildRepoK(org, repo)
     val res = redisServerClient.redisClient.
               lrange(repoK, 1, redisServerClient.redisClient.llen(repoK).toInt - 1).asScala.toList
-println(s"ContribsGH3-Z - repo '${repo.name}', retrieved from cache")
     res.map(s => stringToContrib(repo, s))
   }
 

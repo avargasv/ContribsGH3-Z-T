@@ -710,6 +710,6 @@ support, and performance.
 presents a very clear explanation and good examples of custom error handling.
 - The [official documentation](https://zio.dev/zio-http/) of ZIO HTTP.
 - The ultimate guide to ZIO, [Zionomicon](https://www.zionomicon.com/), co-written by John A. De Goes, the author of 
-ZIO.
+ZIO, and Adam Fraser, main author of ZIO Test.
 
 The Scala source code of this article can be found [here](https://github.com/avargasv/ContribsGH3-Z-T).

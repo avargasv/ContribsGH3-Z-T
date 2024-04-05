@@ -706,8 +706,8 @@ support, and performance.
 
 - Jorge Vasquez' presentation at Functional Scala 2023 about the Endpoints API of ZIO HTTP can be found 
 [here](https://jorgevasquez.blog/elevate-and-conquer-unleashing-the-power-of-high-level-endpoints-in-scala).
-- The first part of a [ZIO HTTP tutorial](https://scalac.io/blog/getting-started-with-zio-http/) by Jakub Czuchnowski,
-presents a very clear explanation and good examples of custom error handling.
+- The first part of a [ZIO HTTP tutorial](https://scalac.io/blog/getting-started-with-zio-http/) by Jakub Czuchnowski, presents a very clear explanation and good 
+examples of custom error handling.
 - The [official documentation](https://zio.dev/zio-http/) of ZIO HTTP.
 - The ultimate guide to ZIO, [Zionomicon](https://www.zionomicon.com/), co-written by John A. De Goes, the author of 
 ZIO, and Adam Fraser, main author of ZIO Test.
